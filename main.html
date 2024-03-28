@@ -4,10 +4,64 @@
 
 <head>
 	<link rel="stylesheet" href="styles.css">
+	
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
 <body>
-	<!-- the entire body must be written by student -->
+	 <div class="container mt-5">
+    <h2>AccioJob Intern Form</h2>
+    <form>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="first-name-input">First Name</label>
+          <input type="text" class="form-control" id="first-name-input" required>
+          <div class="invalid-feedback">Please provide a valid first name.</div>
+        </div>
+        <div class="form-group col-md-6">
+          <label for="last-name-input">Last Name</label>
+          <input type="text" class="form-control" id="last-name-input" required>
+          <div class="invalid-feedback">Please provide a valid last name.</div>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="email-input">Email</label>
+          <input type="email" class="form-control" id="email-input" required>
+          <div class="invalid-feedback">Please provide a valid email.</div>
+        </div>
+        <div class="form-group col-md-6">
+          <label for="college-input">College Name</label>
+          <input type="text" class="form-control" id="college-input" required>
+          <div class="invalid-feedback">Please provide a valid college name.</div>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="roll-no-input">Roll No</label>
+          <input type="text" class="form-control" id="roll-no-input" required>
+          <div class="invalid-feedback">Please provide a valid roll number.</div>
+        </div>
+        <div class="form-group col-md-6">
+          <label for="graduation-year-select">Graduation Year</label>
+          <select class="form-control" id="graduation-year-select" required>
+            <option value="">Select</option>
+            <option>2020</option>
+            <option>2021</option>
+            <option>2022</option>
+            <option>2023</option>
+          </select>
+          <div class="invalid-feedback">Please select your graduation year.</div>
+        </div>
+      </div>
+      <div class="form-group form-check">
+        <input type="checkbox" class="form-check-input" id="conditions-checkbox" required>
+        <label class="form-check-label" for="conditions-checkbox">I agree to the terms and conditions</label>
+        <div class="invalid-feedback">You must agree before submitting.</div>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
     <script type="text/javascript" src="./script.js">
 </script>
 
